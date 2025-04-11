@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/JinjiaBookstoreReactTransact/static/css/main.58e1f9d8.css",
+    "main.js": "/JinjiaBookstoreReactTransact/static/js/main.c22c3b01.js",
+    "static/js/453.419a5d54.chunk.js": "/JinjiaBookstoreReactTransact/static/js/453.419a5d54.chunk.js",
+    "static/media/House-of-Sky-and-Breath.jpg": "/JinjiaBookstoreReactTransact/static/media/House-of-Sky-and-Breath.a10ce75a82433b00b6f8.jpg",
+    "static/media/Fahrenheit-451.jpg": "/JinjiaBookstoreReactTransact/static/media/Fahrenheit-451.fb3b1ae06bb8eafa43fe.jpg",
+    "static/media/The-Housemaid's-Secret.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Housemaid's-Secret.ec3b327610023fd77ff3.jpg",
+    "static/media/Flatland.jpg": "/JinjiaBookstoreReactTransact/static/media/Flatland.801fbe457cfd30463de2.jpg",
+    "static/media/The-Road.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Road.151d88d1be8fcc0bba67.jpg",
+    "static/media/The-Perfect-Couple.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Perfect-Couple.413fde4d36d8bad72460.jpg",
+    "static/media/The-Seven-Husbands-of-Evelyn-Hugo.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Seven-Husbands-of-Evelyn-Hugo.9fca0bf4d9d1e3e8d947.jpg",
+    "static/media/Star-Wars-Jedi-Battle-Scars.jpg": "/JinjiaBookstoreReactTransact/static/media/Star-Wars-Jedi-Battle-Scars.af8b56c6d50479ff4496.jpg",
+    "static/media/Who-Could-Ever-Love-You-A-Family-Memoir.jpg": "/JinjiaBookstoreReactTransact/static/media/Who-Could-Ever-Love-You-A-Family-Memoir.c75412b8700f0b492f40.jpg",
+    "static/media/learn-improve.jpg": "/JinjiaBookstoreReactTransact/static/media/learn-improve.c2491f59b6337aed3329.jpg",
+    "static/media/The-Ballad-of-Songbirds-and-Snakes.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Ballad-of-Songbirds-and-Snakes.3c0b7180547e3f41ffda.jpg",
+    "static/media/The-Silk-Roads-A-New-History-of-the-World.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Silk-Roads-A-New-History-of-the-World.7ed5b2a7a65ee356ff42.jpg",
+    "static/media/harry-potter.jpg": "/JinjiaBookstoreReactTransact/static/media/harry-potter.738adc8dd85bbb170c69.jpg",
+    "static/media/The-Scarlet-Letter.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Scarlet-Letter.e1aaa6ca0c43b8c49cfc.jpg",
+    "static/media/The-Name-of-the-Wind.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Name-of-the-Wind.09ab9910e9b769127f10.jpg",
+    "static/media/Eragon.jpg": "/JinjiaBookstoreReactTransact/static/media/Eragon.d2fb35a225aa74f06398.jpg",
+    "static/media/death-by-fountain.jpg": "/JinjiaBookstoreReactTransact/static/media/death-by-fountain.653670ead8f96cbb7b03.jpg",
+    "static/media/All-Systems-Red.jpg": "/JinjiaBookstoreReactTransact/static/media/All-Systems-Red.4b60a6335ad5fb103d86.jpg",
+    "static/media/Mistborn-The-Final-Empire.jpg": "/JinjiaBookstoreReactTransact/static/media/Mistborn-The-Final-Empire.14db3001f20ff8a0dfc6.jpg",
+    "static/media/Jurassic-Park.jpg": "/JinjiaBookstoreReactTransact/static/media/Jurassic-Park.d2da32a6ea6c88cffcfb.jpg",
+    "static/media/emma.jpg": "/JinjiaBookstoreReactTransact/static/media/emma.691de631c40e5dea3132.jpg",
+    "static/media/The-Way-of-Kings.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Way-of-Kings.e75cb0284510ae860991.jpg",
+    "static/media/The-Hobbit.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Hobbit.b05d50a96fe8339859a0.jpg",
+    "static/media/Team-of-Rivals-The-Political-Genius-of-Abraham-Lincoln.jpg": "/JinjiaBookstoreReactTransact/static/media/Team-of-Rivals-The-Political-Genius-of-Abraham-Lincoln.355abd3f22129273c318.jpg",
+    "static/media/A-Game-of-Thrones.jpg": "/JinjiaBookstoreReactTransact/static/media/A-Game-of-Thrones.41250ba9842e9a208d9e.jpg",
+    "static/media/1776.jpg": "/JinjiaBookstoreReactTransact/static/media/1776.41f779f9ea686ca9a3e9.jpg",
+    "static/media/The-Power-of-Habit.jpg": "/JinjiaBookstoreReactTransact/static/media/The-Power-of-Habit.766be574cbe150a78258.jpg",
+    "index.html": "/JinjiaBookstoreReactTransact/index.html",
+    "main.58e1f9d8.css.map": "/JinjiaBookstoreReactTransact/static/css/main.58e1f9d8.css.map",
+    "main.c22c3b01.js.map": "/JinjiaBookstoreReactTransact/static/js/main.c22c3b01.js.map",
+    "453.419a5d54.chunk.js.map": "/JinjiaBookstoreReactTransact/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58e1f9d8.css",
+    "static/js/main.c22c3b01.js"
+  ]
+}

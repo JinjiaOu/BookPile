@@ -1,0 +1,615 @@
+### Success Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "dssd",
+    "phone": "2494561234",
+    "email": "asdasd@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+
+
+### Missing Name Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "address": "701 Seaton Ave APT 114",
+    "phone": "3474000418",
+    "email": "jinjiaou@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Empty Name Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "",
+    "address": "701 Seaton Ave APT 114",
+    "phone": "3474000418",
+    "email": "jinjiaou@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Invalid Name Test (too short)
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Jo",
+    "address": "701 Seaton Ave APT 114",
+    "phone": "3474000418",
+    "email": "jinjiaou@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Invalid Phone Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Jinjia Ou",
+    "address": "701 Seaton Ave APT 114",
+    "phone": "347400",
+    "email": "jinjiaou@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Invalid Email Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Jinjia Ou",
+    "address": "701 Seaton Ave APT 114",
+    "phone": "3474000418",
+    "email": "jinjiaou gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Invalid CC Number Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Jinjia Ou",
+    "address": "701 Seaton Ave APT 114",
+    "phone": "3474000418",
+    "email": "jinjiaou@gmail.com",
+    "ccNumber": "37424",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Invalid Expiry (Past Month) Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Jinjia Ou",
+    "address": "701 Seaton Ave APT 114",
+    "phone": "3474000418",
+    "email": "jinjiaou@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 10,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Empty Cart Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Jinjia Ou",
+    "address": "701 Seaton Ave APT 114",
+    "phone": "3474000418",
+    "email": "jinjiaou@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": []
+  }
+}
+
+### Invalid Quantity Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Jinjia Ou",
+    "address": "701 Seaton Ave APT 114",
+    "phone": "3474000418",
+    "email": "jinjiaou@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 100,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Missing Address Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "phone": "2494561234",
+    "email": "asdasd@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Missing Phone Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "dssd",
+    "email": "asdasd@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Missing Email Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "dssd",
+    "phone": "2494561234",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Missing CC Number Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "dssd",
+    "phone": "2494561234",
+    "email": "asdasd@gmail.com",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Empty Address Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "",
+    "phone": "2494561234",
+    "email": "asdasd@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Empty Phone Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "dssd",
+    "phone": "",
+    "email": "asdasd@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Empty Email Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "dssd",
+    "phone": "2494561234",
+    "email": "",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Empty CC Number Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "dssd",
+    "phone": "2494561234",
+    "email": "asdasd@gmail.com",
+    "ccNumber": "",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Invalid Address Test (too short)
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "123",
+    "phone": "2494561234",
+    "email": "asdasd@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Valid Current Month Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "dssd",
+    "phone": "2494561234",
+    "email": "asdasd@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
+
+### Valid Next Month Test
+POST http://localhost:8080/JinjiaBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mike Dan",
+    "address": "dssd",
+    "phone": "2494561234",
+    "email": "asdasd@gmail.com",
+    "ccNumber": "374245455400126",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [{
+      "id": 1001,
+      "quantity": 1,
+      "book": {
+        "bookId": 1001,
+        "title": "Rita Hayworth and Shawshank Redemption",
+        "author": "Stephen King",
+        "price": 6.00,
+        "isPublic": true,
+        "categoryId": 1001
+      }
+    }]
+  }
+}
