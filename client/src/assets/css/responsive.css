@@ -1,0 +1,33 @@
+/* Responsive design */
+@media (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .book-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        .book-item {
+            flex: 1 1 calc(50% - 1rem);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .book-item {
+            flex: 1 1 calc(100% - 1rem);
+        }
+    }
+}

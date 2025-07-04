@@ -1,0 +1,180 @@
+.co-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.co-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.co-form {
+    padding-right: 2rem;
+    border-right: 1px solid #eee;
+}
+
+.co-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.co-form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.co-form-group input,
+.co-form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.co-expiry-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.co-error {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.co-order-summary {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: #f8f9fa;
+    height: fit-content;
+}
+
+.co-cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.co-item-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.co-item-info .co-quantity-price {
+    color: #666;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+.co-item-info .co-quantity-price .co-quantity,
+.co-item-info .co-quantity-price .co-price {
+    font-weight: 700;
+    color: #333;
+}
+
+.co-item-info .co-quantity-price .co-multiply {
+    margin: 0 0.25rem;
+    color: #666;
+}
+
+.co-surcharge {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+    border-top: 1px solid #eee;
+}
+
+.co-item-total {
+    text-align: right;
+    color: #dc3545;
+    font-weight: 600;
+    min-width: 80px;
+}
+
+.co-order-totals > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+/* Align price quantities */
+.co-cart-item .co-quantity-price,
+.co-order-totals span:last-child {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Align total amounts to the right */
+.co-subtotal span:last-child,
+.co-tax span:last-child,
+.co-total span:last-child {
+    text-align: right;
+    min-width: 80px;
+}
+
+.co-total {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #dc3545;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.co-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #d40404;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.2s;
+}
+
+.co-btn:hover {
+    background: #960303;
+}
+
+.co-empty-cart {
+    text-align: center;
+    padding: 3rem;
+}
+
+.co-empty-cart p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .co-content {
+        grid-template-columns: 1fr;
+    }
+
+    .co-form {
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 2rem;
+    }
+
+    .co-expiry-inputs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
